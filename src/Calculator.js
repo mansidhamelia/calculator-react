@@ -93,10 +93,10 @@ const Calculator = () => {
                 <button className="number" onClick={() => handleDigitClick('2')}>2</button>
                 <button className="number" onClick={() => handleDigitClick('3')}>3</button>
                 <button className="operator" onClick={() => handleOperatorClick('-')}>-</button>
+                <button className="operator" onClick={() => handleClearClick('remove')} id="clear">C</button>
                 <button className="number" onClick={() => handleDigitClick('0')}>0</button>
                 <button className="operator" onClick={() => handleOperatorClick('+')}>+</button>
                 <button className="operator" onClick={() => handleEqualClick()}>=</button>
-                <button className="operator" onClick={() => handleClearClick('remove')} id="clear">C</button>
             </div>
         </div>
     )
