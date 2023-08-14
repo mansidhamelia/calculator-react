@@ -9,9 +9,11 @@ const Calculator = () => {
     const [operator, setOperator] = useState(null);
 
     const handleDigitClick = (digit) => {
+
         if (displayValue === '0' || currentValue === '0') {
             setCurrentValue(digit);
             setDisplayValue(digit);
+
         } else {
             setCurrentValue(currentValue + digit);
             setDisplayValue(currentValue + digit);
@@ -34,7 +36,6 @@ const Calculator = () => {
     const calculateResult = () => {
         const num1 = parseFloat(previousValue);
         const num2 = parseFloat(currentValue);
-        console.log(previousValue, 'display');
 
         switch (operator) {
             case '+':
@@ -46,7 +47,6 @@ const Calculator = () => {
             case '/':
                 return (num1 / num2).toString();
             default:
-                console.log(currentValue, 'current');
                 return currentValue;
         }
     };
@@ -94,7 +94,6 @@ const Calculator = () => {
                 <button className="number" onClick={() => handleDigitClick('3')}>3</button>
                 <button className="operator" onClick={() => handleOperatorClick('-')}>-</button>
                 <button className="number" onClick={() => handleDigitClick('0')}>0</button>
-                <button className="operator" onClick={() => handleClearClick()}>.</button>
                 <button className="operator" onClick={() => handleOperatorClick('+')}>+</button>
                 <button className="operator" onClick={() => handleEqualClick()}>=</button>
                 <button className="operator" onClick={() => handleClearClick('remove')} id="clear">C</button>
