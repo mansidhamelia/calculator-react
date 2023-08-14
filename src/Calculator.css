@@ -1,0 +1,75 @@
+.container {
+    background-color: rgb(235, 235, 235);
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px;
+    padding: 5px;
+  }
+.display {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+  }
+  #history {
+    text-align: right;
+    padding: 10px;
+    margin: 5px;
+
+    color: black;
+
+  }
+  #result {
+    text-align: right;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    font-size: 30px;
+  }
+
+  
+
+#clear {
+    color: red;
+  }
+  
+.number,
+.operator {
+  margin: 4px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border-width: 0.5px;
+  border-color: rgb(190, 195, 199);
+  align-items: center;
+}
+.number,
+.operator:hover {
+  cursor: pointer;
+}
+.operator {
+    color: yellowgreen;
+    font-size: 15px;
+  }
+  button:nth-child(4) {
+    font-size: 20px;
+  }
+  button:nth-child(8) {
+    font-size: 20px;
+    text-align: center;
+  }
+  button:nth-child(12) {
+    font-size: 20px;
+  }
+  button:nth-child(16) {
+    font-size: 20px;
+  }
+  button:nth-child(19) {
+    font-size: 20px;
+  }
+  button:nth-child(20) {
+    font-size: 20px;
+  }
